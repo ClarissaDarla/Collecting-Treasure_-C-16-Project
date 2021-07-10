@@ -2,6 +2,7 @@ var path,boy,cash,diamonds,jwellery,sword;
 var pathImg,boyImg,cashImg,diamondsImg,jwelleryImg,swordImg;
 var treasureCollection = 0;
 var cashG,diamondsG,jwelleryG,swordGroup;
+var endImg
 
 //Game States
 var PLAY=1;
@@ -75,6 +76,7 @@ function draw() {
       if(swordGroup.isTouching(boy)) {
       gameState = END;
       boy.addAnimation("SahilRunning",endImg);
+      boy.scale = 1
       boy.x = 200;
       boy.y = 300;
       cashG.destroyEach();
